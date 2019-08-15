@@ -205,10 +205,13 @@ body {
     background-color: transparent; }
 
 .card {
-  background-color: #60a3bc;
-  height: 50rem;
-  transition: all 500ms; }
-  .card:hover {
+  perspective: 150rem;
+  -moz-perspective: 150rem; }
+  .card__side {
+    background-color: #60a3bc;
+    height: 50rem;
+    transition: all 1s; }
+  .card:hover .card__side {
     transform: rotateY(180deg); }
 
 .composition {

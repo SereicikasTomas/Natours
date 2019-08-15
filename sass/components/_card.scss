@@ -1,0 +1,8 @@
+.card {
+  background-color: $color-primary;
+  height: 50rem;
+  transition: all 500ms;
+  &:hover {
+    transform: rotateY(180deg);
+  }
+}

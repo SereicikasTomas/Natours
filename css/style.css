@@ -127,85 +127,6 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
 
-.feature-box {
-  background-color: rgba(255, 255, 255, 0.8);
-  font-size: 1.5rem;
-  padding: 2.5rem;
-  text-align: center;
-  border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-  position: relative;
-  transition: all 300ms; }
-  .feature-box__icon {
-    font-size: 6rem;
-    margin-bottom: 0.5rem;
-    display: inline-block;
-    background-image: linear-gradient(to right, #60a3bc, #3c6382);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; }
-  .feature-box::after {
-    content: "";
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    border-top: 2px solid #fff;
-    border-left: 2px solid #fff;
-    border-top-left-radius: 6px;
-    height: 10rem;
-    width: 5rem;
-    transition: all 400ms; }
-  .feature-box::before {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    right: -2px;
-    border-bottom: 2px solid #fff;
-    border-right: 2px solid #fff;
-    border-bottom-right-radius: 6px;
-    height: 10rem;
-    width: 5rem;
-    transition: all 400ms; }
-  .feature-box:hover {
-    transform: translateY(-1.5rem) scale(1.03);
-    box-shadow: 0 2.5rem 6rem rgba(0, 0, 0, 0.5); }
-    .feature-box:hover::after {
-      height: calc(100% + 4px);
-      width: calc(100% + 4px);
-      border-radius: 6px; }
-    .feature-box:hover::before {
-      height: calc(100% + 4px);
-      width: calc(100% + 4px);
-      border-radius: 6px; }
-
-.composition {
-  position: relative; }
-  .composition__photo {
-    width: 55%;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-    border-radius: 2px;
-    border: 2px solid #fff;
-    position: absolute;
-    transition: all 300ms;
-    outline-offset: 1rem; }
-    .composition__photo--p1 {
-      left: 0;
-      top: -2rem; }
-    .composition__photo--p2 {
-      right: 0;
-      top: 5rem; }
-    .composition__photo--p3 {
-      left: 20%;
-      top: 15rem; }
-    .composition__photo:hover {
-      outline: 0.4rem solid #60a3bc;
-      transform: scale(1.2);
-      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-      z-index: 1;
-      border: none; }
-  .composition:hover .composition__photo:not(:hover) {
-    transform: scale(0.9); }
-
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -282,6 +203,92 @@ body {
   color: #60a3bc; }
   .btn-text:active::after {
     background-color: transparent; }
+
+.card {
+  background-color: #60a3bc;
+  height: 50rem;
+  transition: all 500ms; }
+  .card:hover {
+    transform: rotateY(180deg); }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    border: 2px solid #fff;
+    position: absolute;
+    transition: all 300ms;
+    outline-offset: 1rem; }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    .composition__photo--p2 {
+      right: 0;
+      top: 5rem; }
+    .composition__photo--p3 {
+      left: 20%;
+      top: 15rem; }
+    .composition__photo:hover {
+      outline: 0.4rem solid #60a3bc;
+      transform: scale(1.2);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 1;
+      border: none; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.9); }
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  position: relative;
+  transition: all 300ms; }
+  .feature-box__icon {
+    font-size: 6rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #60a3bc, #3c6382);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; }
+  .feature-box::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-top-left-radius: 6px;
+    height: 10rem;
+    width: 5rem;
+    transition: all 400ms; }
+  .feature-box::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-bottom-right-radius: 6px;
+    height: 10rem;
+    width: 5rem;
+    transition: all 400ms; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+    box-shadow: 0 2.5rem 6rem rgba(0, 0, 0, 0.5); }
+    .feature-box:hover::after {
+      height: calc(100% + 4px);
+      width: calc(100% + 4px);
+      border-radius: 6px; }
+    .feature-box:hover::before {
+      height: calc(100% + 4px);
+      width: calc(100% + 4px);
+      border-radius: 6px; }
 
 .header {
   height: 95vh;

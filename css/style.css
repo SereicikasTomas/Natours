@@ -206,13 +206,34 @@ body {
 
 .card {
   perspective: 150rem;
-  -moz-perspective: 150rem; }
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem; }
   .card__side {
     background-color: #60a3bc;
-    height: 50rem;
-    transition: all 1s; }
-  .card:hover .card__side {
+    height: 100%;
+    transition: all 1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2); }
+    .card__side--front {
+      background-color: #fff; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #fad390, #fa983a); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #82ccdd, #3c6382); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #b8e994, #38ada9); }
+  .card:hover .card__side--front {
     transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }
 
 .composition {
   position: relative; }

@@ -223,7 +223,7 @@ body {
     .card__side--front {
       background-color: #fff; }
     .card__side--back {
-      transform: rotateY(180deg); }
+      transform: rotateY(-180deg); }
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #fad390, #fa983a); }
       .card__side--back-2 {
@@ -231,9 +231,9 @@ body {
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #b8e994, #38ada9); }
   .card:hover .card__side--front {
-    transform: rotateY(180deg); }
+    transform: rotateY(-180deg); }
   .card:hover .card__side--back {
-    transform: rotateY(0deg); }
+    transform: rotateY(-360deg); }
 
 .composition {
   position: relative; }

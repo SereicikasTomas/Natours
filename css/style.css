@@ -133,6 +133,20 @@ body {
 .u-margin-top-huge {
   margin-top: 10rem; }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.15;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -188,6 +202,7 @@ body {
   display: inline-block;
   text-decoration: none;
   border-bottom: 1px solid #60a3bc;
+  overflow: hidden;
   padding: 3px;
   position: relative;
   z-index: 1;
@@ -206,6 +221,7 @@ body {
     transform-origin: left; }
 
 .btn-text:hover {
+  border-radius: 3px;
   color: #fff; }
   .btn-text:hover::after {
     transform: scaleX(1); }
@@ -390,7 +406,7 @@ body {
   width: 75%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.3);
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
   padding: 6rem;
   padding-left: 9rem;
@@ -400,7 +416,6 @@ body {
     width: 15rem;
     height: 15rem;
     float: left;
-    background-color: aliceblue;
     -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
     border-radius: 50%;
@@ -500,5 +515,5 @@ body {
   margin-top: -10rem; }
 
 .section-stories {
-  background-color: #f7f7f7;
+  position: relative;
   padding: 15rem 0; }

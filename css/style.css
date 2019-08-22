@@ -65,15 +65,18 @@ html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 3rem; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
   font-size: 1.6rem;
-  color: #777;
-  padding: 3rem; }
+  color: #777; }
 
 .heading-primary {
   color: #fff;
@@ -89,6 +92,10 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
+    @media (max-width: 37.5em) {
+      .heading-primary--main {
+        letter-spacing: 1rem;
+        font-size: 5rem; } }
     .heading-primary--main::after {
       content: "";
       position: absolute;
@@ -102,6 +109,9 @@ body {
       animation-timing-function: linear;
       animation-delay: 1.3s;
       animation-fill-mode: backwards; }
+      @media (max-width: 37.5em) {
+        .heading-primary--main::after {
+          width: 97%; } }
   .heading-primary--sub {
     margin-left: -18px;
     display: block;
@@ -111,6 +121,10 @@ body {
     animation-name: moveInRight;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
+    @media (max-width: 37.5em) {
+      .heading-primary--sub {
+        margin-left: 0;
+        letter-spacing: 0.5rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -124,6 +138,12 @@ body {
   letter-spacing: 2px;
   transition: all 400ms;
   backface-visibility: hidden; }
+  @media (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 3rem; } }
+  @media (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
   .heading-secondary:hover {
     transform: translateY(-10px) scale(1.1);
     text-shadow: -0.5rem 1.5rem 1rem rgba(0, 0, 0, 0.2); }
